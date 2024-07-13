@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <!-- our heading -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+  </head>
+
+  <body> 
+    <!-- the body which contains our nav bar and styling which helps in adjusting color and font sizes -->
+    <header class="heading-one">
+      <h1>My Portfolio</h1>
+      <style>
+        nav{
+          font-size: 40px;
+        }
+        h1{
+          color: rgb(255, 196, 0);
+        }
+        section{
+          font-size: 25px;
+        }
+      </style>
+
+
+     <nav class="nav-bar-1">
+      <!-- nav bar is used so they appear horizontallly -->
+       <a href="#home">Home</a>
+       <a href="#about">About</a>
+       <a href="#work">Work</a>
+       <a href="#resume">Resume</a>
+       <a href="#contact">Contact</a>
+     </nav>
+    </header> 
+
+    <Main>   
+      <!-- our home section for my portfolio -->
+      <section id="home">
+        <h2>Home</h2>
+        <p>
+          <h1>Welcome to My Portfolio!</h1>
+        </p>
+        <p>
+           I am a passionate and innovative software developer dedicated to crafting exceptional code and intuitive user experiences.
+            With a blend of creativity and technical acumen, I thrive in dynamic environments where I can solve complex problems through cutting-edge technology.
+        </p>
+        <!-- the img tag is used for putting image on the webpage -->
+        <img src="./pictures/pexels-sophors-25437425.jpg" alt="pic-3" width="800" height="500">
+      </section>
+    
+      <section id="about">
+        <!-- the about section of the porfolio -->
+        <h2>About</h2>
+        <div>
+          <p>Skills and Expertise:</p>
+           <ul>
+            <li>Languages: JavaScript (Node.js, React), Python, Java</li>
+            <li>Frameworks: Express.js, Django, Spring Boot</li>
+            <li>Databases: MySQL, MongoDB, PostgreSQL</li>
+            <li>Tools & Platforms: Git, Docker, AWS, Azure</li>
+            <li>Methodologies: Agile, Scrum, Test-Driven Development </li>
+          </ul>
+        </div>
+          
+        <div>
+          <!-- we use video tag to put video on the web page while the control attribute is to give the video on the page the play and pause button etc  -->
+         <video controls> 
+           <source src="./video/_Video Editor Showreel 2023 - Video Editor's Portfolio - Nilothpol Bose_.mp4" type="video/mp4" >
+         </video>
+        </div>
+        
+        <!-- the width and height attribute is used to adjust the size of our picture -->
+        <img src="./pictures/carl-heyerdahl-KE0nC8-58MQ-unsplash.jpg" alt="pic" width="800" height="500">
+        
+        <div>
+          <!-- the audio control attributes give the audio on the page the play and pause button etc -->
+         <audio controls>
+          <source src="./music/6IX9INE-GUMMO.mp3" type="audio/mpeg">
+         </audio>
+        </div>
+   
+        <!-- the about section -->
+      </section>
+    
+      <section id="work">
+        <h2>Work </h2>
+        <div>
+          <h3>Portfolio Highlights</h3>
+          <ol>    
+            <!-- the ol is used for ordered list -->
+           <li>E-Commerce Platform</li>
+              <ul>
+                <!-- the ul is unordered list -->
+                <li>Developed a scalable e-commerce platform using React.js and Node.js, handling over 10,000 transactions daily.
+                </li>
+                <li>
+                 Implemented secure payment gateways and integrated with external APIs for shipping and inventory management.
+                </li>
+              </ul>
+           <li>Data Analytics Dashboard</li>
+              <ul>
+                <li>Created a real-time data analytics dashboard for monitoring key metrics using Python, Flask,  and PostgreSQL.
+                </li>
+                <li>Implemented data visualization using D3.js, providing actionable insights to stakeholders.</li>
+              </ul>
+           <li>Mobile Application</li>  
+              <ul>
+                <li>Designed and developed a cross-platform mobile application using React Native, achieving 100,000+ downloads on both iOS and Android.
+                </li>
+                <li>Integrated geolocation services and push notifications to enhance user engagement.</li>
+              </ul>
+          </ol>
+        </Div>
+      </section>
+      
+      <section id="resume">
+        <h2>Resume</h2>
+          </div>
+            <p><h3>Certifications</h3></p>
+            <ul>
+              <li>AWS Certified Developer - Associate</li>
+              <li>ScrumMaster (CSM) Certification</li>
+            </ul>
+          <div>
+          <img src="./pictures/pexels-mart-production-7644013.jpg" alt="pic-2" width="800" height="500">
+       
+        <!-- the resume section -->
+      </section>
+    
+      <section id="contact">
+        <h2>Contact</h2>
+        <!-- the contact section -->
+        <form action="/submit-form-handler" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <!-- the input type tells which type of input to receive -->
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+      </section>
+    </Main>
+
+    <footer>
+      <!--  A <footer> typically contains copyright and authorship information or navigational elements pertaining to the contents of the parent element -->
+      <p>&copy; 2024 Lord Cartel. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
