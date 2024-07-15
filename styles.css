@@ -1,0 +1,36 @@
+.nav-item {
+  /* making the nav bar turn horizontal */
+  display: inline;
+  justify-content: space-between;
+  background-color: rgb(238, 255, 0);
+  margin-left: 100px;
+  border: 2px solid;
+  padding: 5px;
+}
+
+/* changing the font to roboto font */
+body {
+  font-family: "Roboto", sans-serif;
+}
+/* container for scrollable image , the over flow and no wrap makes the image scrollable*/
+.image-container {
+  width: 1350px;
+  height: 600px;
+  white-space: nowrap;
+  border: 1px solid #ccc;
+  overflow: auto;
+}
+
+/* the img sizing */
+.image-container img {
+  width: 800px;
+  height: 600px;
+}
+
+/* adjusting video to middle */
+.video-1 {
+  display: flex;
+  margin-left: 200px;
+  width: 1000px;
+  height: 500px;
+}
